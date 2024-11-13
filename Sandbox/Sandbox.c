@@ -1,15 +1,23 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #define TAXES 0.17
 
+
+#include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <math.h>
+#include <ctype.h>
+#include <stdbool.h>
+#include <time.h>
+#include <limits.h>
+#include <float.h>
+#include <errno.h>
+
+
+
 
 void main() {
 	printf("SandBox:\n=========\n");
-	int arr1[] = { 1, 2, 3 }, arr2[3];
-	for (int i = 0; i < 3; i++) {
-		arr2[i] = arr1[i];
-	}
-	printf("%d\n%d\n%d", arr2[0], arr2[1], arr2[2]);
+
 }

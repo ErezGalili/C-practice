@@ -90,3 +90,23 @@
 //printf("The result is %d\n", res);
 //else
 //printf("invalid operator\n");
+
+//#define NUM_OF_CLASSES 2
+//#define STUDENTS_IN_CLASS 3
+//Try();
+//void Try() {
+//	int grades[NUM_OF_CLASSES][STUDENTS_IN_CLASS];
+//	float average[NUM_OF_CLASSES];
+//	float sum = 0;
+//
+//	for (int i = 0; i < NUM_OF_CLASSES; i++) {
+//		printf("Enter grades for %d students, in class %d:", STUDENTS_IN_CLASS, i + 1);
+//		sum = 0;
+//		for (int j = 0; j < STUDENTS_IN_CLASS; j++) {
+//			scanf("%d", &grades[i][j]);
+//			sum += grades[i][j];
+//		}
+//		average[i] = sum / STUDENTS_IN_CLASS;
+//		printf("The average for class %d is %f.\n", i + 1, average[i]);
+//	}
+//}
