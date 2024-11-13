@@ -12,24 +12,9 @@
 #include <float.h>
 #include <errno.h>
 
-double gradeMatrices() {
-	double arr[2][5];
-	for (int i = 0; i < 2; i++){
-		for (int j = 0; j < 5; j++) {
-			printf("Enter a grade from %d grade: ", i);
-			scanf("%lf", &arr[i][j]);
-		}
-	}
-	for (int i = 0; i < 2; i++) {
-		for (int j = 0; j < 5; j++) {
-			printf("The grade in class %d is %lf ", i, arr[i][j]);
-		}
-	}
-}
 
 int main() {
 	printf("Exe_2:\n=========\n");
-	gradeMatrices();
 
 	return 0;
 }
@@ -47,6 +32,24 @@ int main() {
 //    {
 //        printf("%d, ", myArray[i]);
 //    }
+//}
+
+//TestMatrices
+
+//	gradeMatrices();
+//double gradeMatrices() {
+//	double arr[2][5];
+//	for (int i = 0; i < 2; i++){
+//		for (int j = 0; j < 5; j++) {
+//			printf("Enter a grade from %d grade: ", i);
+//			scanf("%lf", &arr[i][j]);
+//		}
+//	}
+//	for (int i = 0; i < 2; i++) {
+//		for (int j = 0; j < 5; j++) {
+//			printf("The grade in class %d is %lf ", i, arr[i][j]);
+//		}
+//	}
 //}
 
 //Q2
