@@ -13,36 +13,9 @@
 #include <errno.h>
 
 
-void checkIdenticalRowsAndColumns(int a[][4], int b[][4], int n) {
-    int foundMatch;
-    for (int i = 0; i < n; i++) {
-        foundMatch = 0;
-        for (int j = 0; j < n; j++) {
-            int identical = 1;
-            for (int k = 0; k < n; k++) {
-                if (a[i][k] != b[k][j]) {
-                    identical = 0;
-                    break;
-                }
-            }
-            if (identical) {
-                printf("Row %d in matrix A is identical to column %d in matrix B\n", i + 1, j + 1);
-                foundMatch = 1;
-                break; 
-            }
-        }
-        if (!foundMatch) {
-            printf("Row %d in matrix A does not have an identical column in matrix B\n", i + 1);
-        }
-    }
-}
 
 int main() {
 	printf("Exe_3:\n=========\n");
-    int a[4][4] = {{1,2,3,4}, {1,2,3,4}, {1,2,3,4}, {1,2,3,4}};
-    int b[4][4] = {{1,1,1,1}, {2,2,2,2}, {3,3,3,3}, {4,4,4,4}};
-    int n = 4;
-    checkIdenticalRowsAndColumns(a, b, n);
 
 
 	return 0;
@@ -270,6 +243,29 @@ int main() {
 //    return 0;
 //}
 	
+//Q9
+
+//    int a[4][4] = {{1,2,3,4}, {1,2,3,4}, {1,2,3,4}, {1,2,3,4}};
+//    int b[4][4] = {{1,1,1,1}, {2,2,2,2}, {3,3,3,3}, {4,4,4,4}};
+//    int n = 4;
+//    checkIdenticalRowsAndColumns(a, b, n);
+//void checkIdenticalRowsAndColumns(int a[][4], int b[][4], int n) {
+//    for (int i = 0; i < n; i++) {
+//        for (int j = 0; j < n; j++) {
+//            int identical = 1;
+//            for (int k = 0; k < n; k++) {
+//                if (a[i][k] != b[k][j]) {
+//                    identical = 0;
+//                    break;
+//                }
+//            }
+//            if (identical) {
+//                printf("Row %d in matrix A is identical to column %d in matrix B\n", i + 1, j + 1);
+//            }
+//        }
+//    }
+//}
+
 //Q14
 
 //aarNoZeros();
