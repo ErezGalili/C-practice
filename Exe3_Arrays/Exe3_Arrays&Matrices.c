@@ -1,5 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 
+#define MAX_SIZE 100
+
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,7 +18,6 @@
 
 int main() {
 	printf("Exe_3:\n=========\n");
-
 
 	return 0;
 }
@@ -263,6 +264,31 @@ int main() {
 //                printf("Row %d in matrix A is identical to column %d in matrix B\n", i + 1, j + 1);
 //            }
 //        }
+//    }
+//}
+
+//Q11
+
+//	int a[][4] = { {4, 7, 1, 2},{ 2, 3, 5, 7 },{ 8, 2, 5, 1 },{ 3, 6, 5, 6 } };
+//	int n = 4;
+//	diagnalMatric(a, n);
+//void diagnalMatric(int a[][4], int n) {
+//    for (int i = 0; i < n; i++) {
+//        int minIndex = i;
+//        for (int j = 0; j < n; j++) {
+//            if (a[i][j] < a[i][minIndex]) {
+//                minIndex = j;
+//            }
+//        }
+//        int temp = a[i][i];
+//        a[i][i] = a[i][minIndex];
+//        a[i][minIndex] = temp;
+//    }
+//    for (int i = 0; i < n; i++) {
+//        for (int j = 0; j < n; j++) {
+//            printf("%d ", a[i][j]);
+//        }
+//        printf("\n");
 //    }
 //}
 
