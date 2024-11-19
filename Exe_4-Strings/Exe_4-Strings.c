@@ -13,13 +13,20 @@
 #include <errno.h>
 
 
+unsigned countOccurences(const char s1[], const char s2[]) {
+	int counter = 0;
+}
+
 
 int main() {
 	printf("Exe_4:\n=========\n");
 
+    char str[] = "ajdufkrjsjdhvhcuxj";
+    reverse(str);
+	printf("%s", str);
+
 	return 0;
 }
-
 
 
 
@@ -51,4 +58,23 @@ int main() {
 //int isTheSame(char buff[]) {
 //	int index = strlen(buff);
 //	return buff[0] == buff[index - 1];
+//}
+
+//int myStrcmp(char str1[], char str2[]) {
+//	int counter = 0;
+//	while ((unsigned char)str1[counter] == tolower((unsigned char)str2[counter]) && str1[counter] != '\0') counter++;
+//	return tolower((unsigned char)str1[counter]) - tolower((unsigned char)str2[counter]);
+//}
+
+//Q6
+
+//void reverse(char str[]) {
+//    int len, temp;
+//    len = strlen(str);
+//    for (int i = 0; i < len / 2; i++)
+//    {
+//        temp = str[i];
+//        str[i] = str[len - i - 1];
+//        str[len - i - 1] = temp;
+//    }
 //}
