@@ -18,9 +18,7 @@
 int main() {
 	printf("Exe_4:\n=========\n");
 
-	char src[] = "e-r-e-t-z-n-e-h-e-d-e-r-e-t", sep = '-';
-	deleteChar(src, sep);
-	printf(src);
+
 
 	return 0;
 }
@@ -156,6 +154,9 @@ int main() {
 
 //Q9
 
+//char src[] = "e-r-e-t-z-n-e-h-e-d-e-r-e-t", sep = '-';
+//deleteChar(src, sep);
+//printf(src);
 //void deleteChar(char src[], char c) {
 //	int index = 0;
 //	for (int i = 0; src[i]; i++) {
