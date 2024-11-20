@@ -13,17 +13,27 @@
 #include <errno.h>
 
 
-unsigned countOccurences(const char s1[], const char s2[]) {
-	int counter = 0;
+int addCountFromString(char getChar[]) {
+    int value = 0;
+    int currentNum = 0;
+    for (int i = 0; i < strlen(getChar); i++) {
+        if (isdigit(getChar[i])) {
+            currentNum = currentNum * 10 + (getChar[i] - 48);
+        } else {
+            value += currentNum;
+            currentNum = 0;
+        }
+    }
+    value += currentNum;
+    return value;
 }
 
 
 int main() {
 	printf("Exe_4:\n=========\n");
 
-    char str[] = "ajdufkrjsjdhvhcuxj";
-    reverse(str);
-	printf("%s", str);
+    char getChar[] = "ab600cw580d12";
+    printf("%d", addCountFromString(getChar));
 
 	return 0;
 }
@@ -68,6 +78,9 @@ int main() {
 
 //Q6
 
+//char str[] = "ajdufkrjsjdhvhcuxj";
+//reverse(str);
+//printf("%s", str);
 //void reverse(char str[]) {
 //    int len, temp;
 //    len = strlen(str);
@@ -77,4 +90,28 @@ int main() {
 //        str[i] = str[len - i - 1];
 //        str[len - i - 1] = temp;
 //    }
+//}
+
+//Q7
+
+//char ary1[] = "abaabaabaabaabaabaaba";
+//char ary2[] = "aba";
+//printf("%d ", countOccurences(ary1, ary2));
+//unsigned countOccurences(const char s1[], const char s2[]) {
+//	int len1 = strlen(s1);
+//	int len2 = strlen(s2);
+//	int count = 0;
+//	for (int i = 0; i <= len1 - len2; i++) {
+//		int match = 1;
+//		for (int j = 0; j < len2; j++) {
+//			if (s1[i + j] != s2[j]) {
+//				match = 0;
+//				break;
+//			}
+//		}
+//		if (match) {
+//			count++;
+//		}
+//	}
+//	return count;
 //}
