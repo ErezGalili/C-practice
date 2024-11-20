@@ -15,13 +15,16 @@
 
 
 
-
 int main() {
 	printf("Exe_4:\n=========\n");
 
+	char src[] = "e-r-e-t-z-n-e-h-e-d-e-r-e-t", sep = '-';
+	deleteChar(src, sep);
+	printf(src);
 
 	return 0;
 }
+
 
 
 
@@ -149,4 +152,37 @@ int main() {
 //    }
 //    value += currentNum;
 //    return value;
+//}
+
+//Q9
+
+//void deleteChar(char src[], char c) {
+//	int index = 0;
+//	for (int i = 0; src[i]; i++) {
+//		if (src[i] != c) {
+//			src[index] = src[i];
+//			index++;
+//		}
+//	}
+//	src[index] = '\0';
+//}
+
+//Q10
+
+//void caesarCipher(const char str[], int key) {
+//    char encrypted[255];
+//    int i = 0;
+//    while (str[i] != '\0') {
+//        char c = str[i];
+//        if (isalpha(c)) {
+//            char base = islower(c) ? 'a' : 'A';
+//            encrypted[i] = (c - base + key) % 26 + base;
+//        }
+//        else {
+//            encrypted[i] = c;
+//        }
+//        i++;
+//    }
+//    encrypted[i] = '\0';
+//    printf("Encrypted string: %s\n", encrypted);
 //}
