@@ -13,32 +13,23 @@
 #include <errno.h>
 
 
-int addCountFromString(char getChar[]) {
-    int value = 0;
-    int currentNum = 0;
-    for (int i = 0; i < strlen(getChar); i++) {
-        if (isdigit(getChar[i])) {
-            currentNum = currentNum * 10 + (getChar[i] - 48);
-        } else {
-            value += currentNum;
-            currentNum = 0;
-        }
-    }
-    value += currentNum;
-    return value;
-}
+
 
 
 int main() {
 	printf("Exe_4:\n=========\n");
 
-    char getChar[] = "ab600cw580d12";
-    printf("%d", addCountFromString(getChar));
 
 	return 0;
 }
 
 
+
+//int myStrcmp(char str1[], char str2[]) {
+//	int counter = 0;
+//	while ((unsigned char)str1[counter] == tolower((unsigned char)str2[counter]) && str1[counter] != '\0') counter++;
+//	return tolower((unsigned char)str1[counter]) - tolower((unsigned char)str2[counter]);
+//}
 
 //Q1
 
@@ -70,10 +61,34 @@ int main() {
 //	return buff[0] == buff[index - 1];
 //}
 
-//int myStrcmp(char str1[], char str2[]) {
-//	int counter = 0;
-//	while ((unsigned char)str1[counter] == tolower((unsigned char)str2[counter]) && str1[counter] != '\0') counter++;
-//	return tolower((unsigned char)str1[counter]) - tolower((unsigned char)str2[counter]);
+//Q3
+
+//char st[] = "HAPPY BIRTHDAY TO YOU";
+//printf("%d", countLastY(st));
+//int countLastY(char st[100]) {
+//	int countY = 0;
+//	for (int i = 0; st[i]; i++) {
+//		if (isalpha(st[i]) || st[i] == ' ') {
+//			if (st[i] == ' ' && st[i - 1] == 'Y') {
+//				countY++;
+//			}
+//		}
+//	}
+//	return countY;
+//}
+
+//Q4
+
+//int printStr(char s1[], char s2) {
+//	if (strlen(s1) - strlen(s2) >= strlen(s1)) {
+//		printf(s1);
+//	}
+//	else if (strlen(s2) - strlen(s1) >= strlen(s2)) {
+//		printf(s2);
+//	}
+//	else {
+//		printf("%s\n", (strlen(s1) < strlen(s2)) ? s1 : s2);
+//	}
 //}
 
 //Q6
@@ -114,4 +129,24 @@ int main() {
 //		}
 //	}
 //	return count;
+//}
+
+//Q8
+
+//char getChar[] = "ab600cw580d12";
+//printf("%d", addCountFromString(getChar));
+//int addCountFromString(char getChar[]) {
+//    int value = 0;
+//    int currentNum = 0;
+//    for (int i = 0; i < strlen(getChar); i++) {
+//        if (isdigit(getChar[i])) {
+//            currentNum = currentNum * 10 + (getChar[i] - 48);
+//        }
+//        else {
+//            value += currentNum;
+//            currentNum = 0;
+//        }
+//    }
+//    value += currentNum;
+//    return value;
 //}
