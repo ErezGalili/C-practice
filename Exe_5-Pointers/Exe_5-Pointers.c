@@ -13,13 +13,18 @@
 #include <errno.h>
 
 
-
+size_t myStrlen(const char* str) {
+	char* tmpStr = str;
+	while (*tmpStr) tmpStr++;
+		return (tmpStr - str);
+}
 
 
 int main() {
 	printf("Exe_5:\n=========\n");
 
-
+	char len[] = "sakjhfjsdhf";
+	printf("%d", strlen(len));
 
 	return 0;
 }
