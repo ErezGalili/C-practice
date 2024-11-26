@@ -16,7 +16,6 @@
 
 
 
-
 int main() {
 	printf("Exe_5:\n=========\n");
 
