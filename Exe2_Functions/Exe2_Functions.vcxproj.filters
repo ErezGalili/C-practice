@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Exe2_Functions.c">
+    <ClCompile Include="Exe_2-Functions.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

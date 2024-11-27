@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Exe3_Arrays&amp;Matrices.c">
+    <ClCompile Include="Exe_3-Arrays&amp;Matrices.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
