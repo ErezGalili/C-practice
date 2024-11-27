@@ -112,4 +112,26 @@ char* MyStrncat(char* destination, const char* source, size_t num) {
     *destination = '\0';
     return destStart;
 }
+
+Q7
+
+    char* arr = "abcdefg";
+    char* subarr = "bc";
+    printf("%p\n", &arr[1]);
+    printf("%p", MyStrStr(arr, subarr));
+char* MyStrStr(const char* str, const char* substr) {
+    while (*str) {
+        const char* s1 = str;
+        const char* s2 = substr;
+        while (*s1 && *s2 && (*s1 == *s2)) {
+            s1++;
+            s2++;
+        }
+        if (!*s2) {
+            return (char*)str;
+        }
+        str++;
+    }
+    return NULL;
+}
 */
