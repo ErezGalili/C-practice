@@ -93,3 +93,20 @@ int main() {
 //    *destination = '\0';
 //    return destStart;
 //}
+
+//Q6
+
+//char* MyStrncat(char* destination, const char* source, size_t num) {
+//    char* destStart = destination;
+//    while (*destination) {
+//        destination++;
+//    }
+//    while (num && *source) {
+//        *destination = *source;
+//        destination++;
+//        source++;
+//        num--;
+//    }
+//    *destination = '\0';
+//    return destStart;
+//}
