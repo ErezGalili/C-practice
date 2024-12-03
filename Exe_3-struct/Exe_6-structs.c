@@ -14,21 +14,17 @@
 
 
 typedef struct {
-	int x;
-	int y;
+	float x;
+	float y;
 } Dot_t;
+
 typedef struct {
 	Dot_t tl;
 	Dot_t br;
 } Squre_t;
 
-Squre_t isInXnY(Squre_t s, Dot_t d) {
-	if (d.x > s.tl.x && d.x < s.br.x && d.y > s.br.y && d.y < s.tl.y) {
-		printf("Dot is in the squre");
-	}
-	else {
-		printf("Dot is out of the squre");
-	}
+int isInXnY(Squre_t s, Dot_t d) {
+	return (d.x >= s.tl.x && d.x <= s.br.x && d.y >= s.br.y && d.y <= s.tl.y);
 }
 
 
@@ -40,7 +36,7 @@ int main() {
 		{15,-15}
 	};
 	Dot_t dot = { 12,3 };
-	isInXnY(squre, dot);
+	printf("%d", isInXnY(squre, dot));
 
 	return 0;
 }
