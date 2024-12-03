@@ -14,10 +14,31 @@
 #include <float.h>
 #include <errno.h>
 
+#include <stdio.h>
 
-
-
-void main() {
-	printf("SandBox:\n=========\n");
-
+void incrementStaticVar() {
+    static int x = 0; // משתנה סטטי פנימי
+    x++;
+    printf("Value of x: %d\n", x);
 }
+
+void resetStaticVar() {
+    static int x = 0; // גישה לאותו משתנה סטטי
+    x = 0;
+    printf("Static variable reset to 0.\n");
+}
+
+int main() {
+    incrementStaticVar(); // Output: Value of x: 1
+    incrementStaticVar(); // Output: Value of x: 2
+    resetStaticVar();     // Output: Static variable reset to 0.
+    incrementStaticVar(); // Output: Value of x: 1
+    return 0;
+}
+
+
+
+//void main() {
+//	printf("SandBox:\n=========\n");
+//
+//}
