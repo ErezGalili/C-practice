@@ -13,30 +13,13 @@
 #include <errno.h>
 
 
-typedef struct {
-	float x;
-	float y;
-} Dot_t;
 
-typedef struct {
-	Dot_t tl;
-	Dot_t br;
-} Squre_t;
-
-int isInXnY(Squre_t s, Dot_t d) {
-	return (d.x >= s.tl.x && d.x <= s.br.x && d.y >= s.br.y && d.y <= s.tl.y);
-}
 
 
 int main() {
 	printf("Exe_6:\n=========\n");
 
-	Squre_t squre = {
-		{-15, 15},
-		{15,-15}
-	};
-	Dot_t dot = { 12,3 };
-	printf("%d", isInXnY(squre, dot));
+
 
 	return 0;
 }
@@ -129,7 +112,32 @@ MyTime_t DiffTime(MyTime_t t1, MyTime_t t2) {
 
 Q3
 
+	Squre_t squre = {
+		{0, 0},
+		{0,0}
+	};
+	Dot_t dot = { 0, 0 };
+	printf("Enter the squre top left X and Y and then the buttom right X and Y\n");
+	scanf("%f%f%f%f", &squre.tl.x ,&squre.tl.y ,&squre.br.x ,&squre.br.y);
+	printf("Enter the dot X and Y\n");
+	scanf("%f %f", &dot.x, &dot.y);
+	if (isInXnY(squre, dot)){
+	printf("The dot is in the squre");
+	} else {
+		printf("The dot is NOT in the squre");
+	}
+typedef struct {
+	float x;
+	float y;
+} Dot_t;
 
+typedef struct {
+	Dot_t tl;
+	Dot_t br;
+} Squre_t;
+int isInXnY(Squre_t s, Dot_t d) {
+	return (d.x >= s.tl.x && d.x <= s.br.x && d.y >= s.br.y && d.y <= s.tl.y);
+}
 
 Q4
 
