@@ -126,3 +126,29 @@ int main()
 //        }
 //    }
 //}
+
+//Q11
+//
+//char id[9] = "12345678";
+//int checkDigit = calculateCheckDigit(id);
+//printf("The check digit for ID %s is: %d\n", id, checkDigit);
+//char id2[9] = "027460690";
+//printf("%d", isIdValid(&id2));
+//int calculateCheckDigit(const char id[]) {
+//    int sum = 0;
+//    for (int i = 0; i < 8; i++) {
+//        int digit = id[i] - '0';
+//        int multiplier = (i % 2 == 0) ? 1 : 2;
+//        int product = digit * multiplier;
+//        if (product > 9) {
+//            product = product / 10 + product % 10;
+//        }
+//        sum += product;
+//    }
+//    int checkDigit = (10 - (sum % 10)) % 10;
+//    return checkDigit;
+//}
+//
+//int isIdValid(const char* id) {
+//    return id[8] - '0' == calculateCheckDigit(id);
+//}
