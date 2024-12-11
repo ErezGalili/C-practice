@@ -7,17 +7,19 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe_1-StartPrograming", "Exe_1-StartPrograming\Exe_1-StartPrograming.vcxproj", "{B98F6239-6564-4B18-B080-6BDCE1E4279A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe2_Functions", "Exe2_Functions\Exe2_Functions.vcxproj", "{15D48622-4DD2-4D4F-AF95-301C978B2E44}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe_2-Functions", "Exe2_Functions\Exe2_Functions.vcxproj", "{15D48622-4DD2-4D4F-AF95-301C978B2E44}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe3_Arrays&Matrices", "Exe3_Arrays\Exe3_Arrays.vcxproj", "{691D26E7-EC84-4C16-A797-154B9F430DB1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe_3-Arrays&Matrices", "Exe3_Arrays\Exe3_Arrays.vcxproj", "{691D26E7-EC84-4C16-A797-154B9F430DB1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe_4-Strings", "Exe_4-Strings\Exe_4-Strings.vcxproj", "{AFBEFFF2-4B2A-4452-ABF2-CA72F05925B1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe_5-Pointers", "Exe_5-Pointers\Exe_5-Pointers.vcxproj", "{0931C816-FC9A-48C6-84ED-2C4CCD75C6FF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe_6-struct", "Exe_3-struct\Exe_3-struct.vcxproj", "{8BE27D19-FD2B-43D7-9BF3-2AE903AFE9B4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe_6-structs", "Exe_3-struct\Exe_3-struct.vcxproj", "{8BE27D19-FD2B-43D7-9BF3-2AE903AFE9B4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe_7-DynamicAllocation", "Exe_7-DynamicAllocation\Exe_7-DynamicAllocation.vcxproj", "{06EFB469-AEE5-4851-874E-C3F4D78682E4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Practice", "Practice\Practice.vcxproj", "{36D1F9C4-89C3-4255-9A88-AF4DAAE391E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +93,14 @@ Global
 		{06EFB469-AEE5-4851-874E-C3F4D78682E4}.Release|x64.Build.0 = Release|x64
 		{06EFB469-AEE5-4851-874E-C3F4D78682E4}.Release|x86.ActiveCfg = Release|Win32
 		{06EFB469-AEE5-4851-874E-C3F4D78682E4}.Release|x86.Build.0 = Release|Win32
+		{36D1F9C4-89C3-4255-9A88-AF4DAAE391E2}.Debug|x64.ActiveCfg = Debug|x64
+		{36D1F9C4-89C3-4255-9A88-AF4DAAE391E2}.Debug|x64.Build.0 = Debug|x64
+		{36D1F9C4-89C3-4255-9A88-AF4DAAE391E2}.Debug|x86.ActiveCfg = Debug|Win32
+		{36D1F9C4-89C3-4255-9A88-AF4DAAE391E2}.Debug|x86.Build.0 = Debug|Win32
+		{36D1F9C4-89C3-4255-9A88-AF4DAAE391E2}.Release|x64.ActiveCfg = Release|x64
+		{36D1F9C4-89C3-4255-9A88-AF4DAAE391E2}.Release|x64.Build.0 = Release|x64
+		{36D1F9C4-89C3-4255-9A88-AF4DAAE391E2}.Release|x86.ActiveCfg = Release|Win32
+		{36D1F9C4-89C3-4255-9A88-AF4DAAE391E2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
